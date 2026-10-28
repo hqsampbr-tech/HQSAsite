@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#070a08" />
+  <title>Global Footprint — Singapore Artillery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="footprint-page">
+  <header class="site-header footprint-header">
+    <a class="brand" href="index.html#home" aria-label="Return to Singapore Artillery home">
+      <img src="assets/singapore-artillery-logo.png" alt="" />
+      <span>Singapore Artillery</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="footprint.html" class="is-current" aria-current="page">Global Footprint</a>
+      <a href="artillery-life.html">Artillery Life</a>
+      <a href="officer.html">Officer Scheme</a>
+      <a href="wospec.html">WOSpec Scheme</a>
+      <a href="https://go.gov.sg/joinarmy" target="_blank" rel="noopener noreferrer">Apply</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main class="footprint-main">
+    <section class="footprint-hero">
+      <h1>Global Footprint</h1>
+    </section>
+
+    <section class="footprint-world-story" id="footprint-world" aria-label="Singapore Artillery global footprint">
+      <div class="footprint-world-sticky">
+        <h2 class="footprint-world-intro">Connected across the world</h2>
+
+        <div class="footprint-training-lower-third">
+          Our Artillery trains with our partners in
+        </div>
+
+        <div class="footprint-operations-heading">
+          We have conducted operations in
+        </div>
+
+        <div class="footprint-photo-tray" aria-label="Highlighted country photographs">
+          <div class="footprint-photo-tray-inner"></div>
+        </div>
+
+        <div class="footprint-world-map" aria-label="World map showing Singapore Artillery global footprint">
+          <img src="assets/world-map.png" alt="World map" />
+
+          <div class="footprint-country country-new-zealand" data-country-index="0">
+            <span class="country-pulse"></span>
+            <span class="country-dot"></span>
+            <span class="country-label">New Zealand</span>
+          </div>
+
+          <div class="footprint-country country-australia" data-country-index="1">
+            <span class="country-pulse"></span>
+            <span class="country-dot"></span>
+            <span class="country-label">Australia</span>
+          </div>
+
+          <div class="footprint-country country-usa" data-country-index="2">
+            <span class="country-pulse"></span>
+            <span class="country-dot"></span>
+            <span class="country-label">United States</span>
+          </div>
+
+          <div class="footprint-country country-india" data-country-index="3">
+            <span class="country-pulse"></span>
+            <span class="country-dot"></span>
+            <span class="country-label">India</span>
+          </div>
+
+          <div class="footprint-country country-afghanistan footprint-operation-marker">
+            <span class="country-pulse"></span>
+            <span class="country-dot"></span>
+            <span class="country-label">
+              <strong>Afghanistan</strong>
+              <small>Operation BLUE RIDGE</small>
+            </span>
+          </div>
+        </div>
+
+        <div class="footprint-operation-content" aria-label="Operations in Afghanistan">
+          <article class="footprint-operation-card footprint-operation-card-primary">
+            <div class="footprint-operation-image">
+              <img
+                src="assets/afghanistan-flag-hoisting.jpg"
+                alt="Singapore Artillery personnel raising the Singapore flag at Camp Arthur in Afghanistan"
+              />
+            </div>
+            <div class="footprint-operation-copy">
+              <p class="footprint-operation-kicker">Operation BLUE RIDGE</p>
+              <h3>Shield of Safety</h3>
+              <p>
+                Three rotations of deployments between 08 Sep 2009 to 28 Dec 2010
+                to deploy our ARTHUR Weapon Locating Radar.
+              </p>
+              <button class="footprint-video-button" type="button" data-open-obr-video>
+                See the WLR in Afghanistan
+              </button>
+            </div>
+          </article>
+
+          <article class="footprint-operation-card footprint-operation-card-secondary">
+            <div class="footprint-operation-image">
+              <img
+                src="assets/afghan-live-firing.jpg"
+                alt="Artillery live firing training in Afghanistan"
+              />
+            </div>
+            <div class="footprint-operation-copy">
+              <p class="footprint-operation-kicker">Operation BLUE RIDGE</p>
+              <h3>Shona Ba Shona</h3>
+              <p>
+                Training the Afghan force from 2010 to 2012 in the Australian
+                Defence Force sponsored Artillery School at the Kabul Military
+                Training Centre.
+              </p>
+            </div>
+          </article>
+        </div>
+
+
+        <div class="footprint-training-video-modal" aria-hidden="true">
+          <div class="footprint-video-backdrop" data-close-training-video></div>
+          <div
+            class="footprint-video-dialog footprint-training-video-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="footprint-training-video-title"
+          >
+            <button
+              class="footprint-video-close"
+              type="button"
+              data-close-training-video
+              aria-label="Close training video"
+            >×</button>
+            <h3 id="footprint-training-video-title"></h3>
+            <video controls playsinline preload="metadata"></video>
+          </div>
+        </div>
+
+        <div class="footprint-video-modal" aria-hidden="true">
+          <div class="footprint-video-backdrop" data-close-obr-video></div>
+          <div class="footprint-video-dialog" role="dialog" aria-modal="true" aria-label="Arty OBR video">
+            <button class="footprint-video-close" type="button" data-close-obr-video aria-label="Close video">×</button>
+            <video src="assets/arty-obr.mp4" controls playsinline preload="metadata"></video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section footprint-closing">
+      <img src="assets/singapore-artillery-logo.png" alt="" />
+      <a class="closing-headline-link" href="https://go.gov.sg/joinarmy" target="_blank" rel="noopener noreferrer"><h2>Are you Ready to<br />Explore the World with Us?</h2></a>
+      <a class="ghost-link" href="https://go.gov.sg/joinarmy" target="_blank" rel="noopener noreferrer">Join Us ↗</a>
+    </section>
+  </main>
+
+  <script src="footprint.js"></script>
+</body>
+</html>
